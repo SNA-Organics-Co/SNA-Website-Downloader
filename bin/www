@@ -1,5 +1,5 @@
 var app = require('../app');
-var debug = require('debug')('website-downloader:server');
+var debug = require('debug')('sna-website-downloader:server');
 var http = require('http');
 
 var port = normalizePort(process.env.PORT || '3000');

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
+    <meta name="google" content="notranslate">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="index,follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://github.com/Svxy/imgs/blob/main/icon.png?raw=true">
+    <link rel="icon" sizes="192x192" href="https://github.com/Svxy/imgs/blob/main/icon.png?raw=true">
+    <link rel="apple-touch-icon" href="https://github.com/Svxy/imgs/blob/main/icon.png?raw=true">
+    <meta name="pinterest" content="nopin" description="Sorry, you can't save from our websites!">
+    <title>S&A Website Downloader</title>
+    <meta name="description" content="Simple Website Frontend Downloader by S&A Organics Co.">
+    <noscript>Enable JavaSript for the best experience on this site.</noscript>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="/socket.io/socket.io.js"></script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
-
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     {{{body}}}
@@ -57,7 +64,7 @@
         console.log("Now downloading the website ... %s",website)
         socket.emit('request', { token: localStorage['token'] , website});
    }
-   
+
   function generateToken(n) {
     var chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     var token = '';
